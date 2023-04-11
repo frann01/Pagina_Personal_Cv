@@ -1,0 +1,250 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Mi Curriculum";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="wrapper">
+    <div class="header-background">
+    <div id="nav" class="sticky-nav">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand">Mi Currículum</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#sobreMi">Sobre Mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#historial">Historial Académico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#habilidades">Habilidades</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#experiencia">Experiencia Laboral</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#Contacto">Contacto</a>
+                        </li>
+                    </ul>
+                        <a href="/Francisco Szellner.pdf" download><input value="Descargar PDF" type="button" class="btn btn-color form-btm"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h1 class="heading">Francisco Szellner</h1>
+    <img class="profile-picture" src="~/foto.jpg">
+</div>
+<div class="container-fluid" id="sobreMi">
+    <div class="row">
+            <div class="col-xs-12 col-sm col-lg-6 column-left">
+
+        </div>
+
+        <div class="col-xs-12 col-sm col-lg-6 column-right">
+            <h1 class="section-title">Sobre Mí</h1>
+            <h4 class="section-subtitle">Fullstack Developer</h4>
+            <p class="parrafo">
+                Soy egresado de la UTN en la carrera de Técnico Universitario en Programación y me encuentro buscando mi primer experiencia dentro del mercado laboral. Me caracterizo por mi facilidad para el trabajo en equipo y
+                mi entusiasmo por aprender y desarrollar mis habilidades. Deseo encontrar una posición en la cual pueda demostrar todo mi potencial y adquirir más experiencia.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="historial">
+    <div class="row">
+        <div class="div-historial">
+            <h1 class="section-title">Historial Académico</h1>
+            <div class="historial-section">
+                <h3>Universidad Tecnológica Nacional de Avellaneda</h3>
+                <h5>Tecnicatura en Programación | Enero 2021 a noviembre 2022</h5>
+                <ol>
+                    <li class="parrafo">Desarrollo Full Stack de paginas web.</li>
+                    <li class="parrafo">Diseño y desarrollo de aplicaciones móviles.</li>
+                    <li class="parrafo">Participación en equipos de desarrollo.</li>
+                </ol>
+            </div>
+
+            <div class="historial-section">
+                <h3>Colegio Eduardo L. Holmberg</h3>
+                <h5>Bachiller en Cs. Sociales | De Enero 2013 a diciembre 2019</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container habilidades-container" id="habilidades">
+    <h1 class="habilidades-title">Hard Skills</h1>
+    <div class="logo-container top">
+        <div >
+            <img src="~/C-Sharp.png" class="lng-logo">
+            <img src="~/C.png" class="lng-logo">
+            <img src="~/Angular_.png" class="lng-logo">
+            <img src="~/html.png" class="lng-logo">
+            <img src="~/css.png" class="lng-logo">
+            <img src="~/ionic.png" class="lng-logo">
+        </div>
+    </div>
+
+    <div class="logo-container bottom">
+        <div>
+            <img src="~/javscript.png" class="lng-logo">
+            <img src="~/typescript.png" class="lng-logo">
+            <img src="~/NET.png" class="lng-logo">
+            <img src="~/PHP-logo.svg.png" class="lng-logo">
+            <img src="~/Python-logo-notext.svg.png" class="lng-logo">
+            <img src="~/sql.png" class="lng-logo">
+        </div>
+    </div>
+    <div class="idiomas">
+        <br>
+            <br>
+        <h3>Inglés Avanzado C1 | Alemán Intermedio</h3>
+    </div>
+</div>
+
+
+<div class="container-fluid div-experiencia" id="experiencia">
+    <div class="row">
+
+        <div class="div-experiencia">
+            <h1 class="section-title">Experiencia Laboral</h1>
+            <div class="experiencia-section">
+                <h3>Fullstack Developer</h3>
+                <h5>Freelance | De Octubre 2022 a la fecha</h5>
+                <ol>
+                    <li class="parrafo">
+                        Desarrollo de la interfaz y arquitectura del sitio web
+                        utilizando Angular Framework.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="experiencia-section">
+                <h3>Operador de Radio</h3>
+                <h5>Fm Elit | De enero de 2019 a diciembre de 2020</h5>
+                <ol>
+                    <li class="parrafo">Producción de programa de radio.</li>
+                    <li class="parrafo">Control y organización del programa al aire.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+@{
+
+}
+
+<div class="container-fluid" id="Contacto">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-6 contact-left" >
+            <div class="text-left-block">
+                <div class="left-center-text">
+                    <div class="left-center-part">
+                        <h2 class="contact-section">Contactarse</h2>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                    <form method="post" id="contact-form" class="form-form" name="contact-form" data-name="contact-form">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                    <input asp-for="@Model.name" class="form-check form-control" placeholder="Nombre*"  required />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                    <input asp-for="@Model.email" type="email" id="email" runat="server" class="form-check form-control" placeholder="Correo*" required />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                    <input asp-for="@Model.company"  class="form-check form-control" placeholder="Empresa"  />
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                    <input  asp-for="@Model.phone" class="form-check form-control" placeholder="Telefono"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-12 col-sm-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <textarea asp-for="@Model.message" class="form textarea form-control" placeholder="Mensaje*" required></textarea>
+                                            </div>
+                                        </div>
+                                        <span id="divResult" class="sub-text">* Campos obligatorios</span>
+                                    </div>
+                                    <button  type="submit" id="Buttonform" class="btn btn-color form-btm margin">Enviar Mensaje</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-6 contact-right">
+            
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h6>Contacto</h6>
+                <p><b>Telefono: </b> +54 01 3125 6863</p>
+                <p><b>Email: </b> franszellner@gmail.com</p>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <h6>Secciones</h6>
+                <ul class="footer-links">
+                    <li><a href="#sobreMi">Sobre Mí</a></li>
+                    <li><a href="#historial">Historial Académico</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                </ul>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <br />
+                <ul class="footer-links">
+                    <li><a  href="#experiencia">Experiencia Laboral</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">
+                    Copyright &copy; 2023 Francisco Szellner
+                </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                    <li><a class="github" href="https://github.com/frann01"><i class="fa fa-github"></i></a></li>
+                    <li><a class="linkedin" href="https://www.linkedin.com/in/franciscoszellner/ "><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+

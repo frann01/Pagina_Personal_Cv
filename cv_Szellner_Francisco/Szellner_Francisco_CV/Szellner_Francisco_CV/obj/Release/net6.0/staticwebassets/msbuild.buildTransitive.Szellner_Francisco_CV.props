@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Szellner_Francisco_CV.props" />
+</Project>
